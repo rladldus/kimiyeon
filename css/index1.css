@@ -1,0 +1,165 @@
+/* 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbit', sans-serif;
+  background-color: #fce0ec;
+  color: #000;
+  line-height: 1.5;
+}
+
+/* 헤더 */
+header {
+  border-bottom: 1px solid #000;
+  background-color: #fce0ec;
+}
+
+.header_in ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  list-style: none;
+}
+
+.header_in ul li img {
+  width: 80px;
+}
+
+.line {
+  height: 1px;
+  background-color: #000;
+}
+
+/* 모바일 헤드 (상단 작은 네비게이션) */
+.head ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  list-style: none;
+}
+
+.head ul li img {
+  width: 60px;
+}
+
+/* INTRO - COURSE 영역 */
+.intro .corse_1 .corseimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro .corse_1 .corseimg div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.intro .corse_1 .corseimg img {
+  width: 60px;
+  margin: 5px;
+}
+
+.corse_2 {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.corse_2 p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.corse_2_img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.corse_2_img img {
+  width: 20px;
+}
+
+/* PROJECT 영역 (1~6) */
+.ct {
+  padding: 2rem 1rem;
+}
+
+.first, .mid, .end {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ct_1, .ct_2, .ct_3, .ct_4, .ct_5 {
+  position: relative;
+}
+
+.ct_1 img,
+.ct_2 img,
+.ct_3 img,
+.ct_4 img,
+.ct_5 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ct1_text,
+.ct2_text,
+.ct3_text,
+.ct4_text,
+.ct5_text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.ct6_text_1 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.ct_6 img {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+}
+
+/* 반응형 미디어 쿼리 */
+@media (min-width: 768px) {
+  .first, .mid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .first > div,
+  .mid > div {
+    width: 48%;
+  }
+
+  .end {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ct_5 {
+    width: 65%;
+  }
+
+  .ct_6 {
+    width: 30%;
+  }
+}
